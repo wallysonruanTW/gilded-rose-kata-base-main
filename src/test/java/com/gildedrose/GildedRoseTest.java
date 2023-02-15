@@ -21,7 +21,6 @@ public class GildedRoseTest {
 
     @Test
     public void regularItemShouldDegradeItsQualityTwiceAsFastWhenSellInDateHasPassed() {
-        var i = Item.regularItem("+5 Dexterity Vest", 0, 20);
         Item item = new Item("+5 Dexterity Vest", 0, 20);
         Item[] items = new Item[]{item};
         GildedRose app = new GildedRose(items);
