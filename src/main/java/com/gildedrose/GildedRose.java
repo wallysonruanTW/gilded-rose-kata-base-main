@@ -10,51 +10,57 @@ class GildedRose {
 
     public void updateQuality() {
         for (Item item : items) {
-            if (item.name.equals("Sulfuras, Hand of Ragnaros")) {
-            }else{
-                if(item.name.equals("Backstage passes to a TAFKAL80ETC concert")){
-                    if (item.sellIn > 5 && item.sellIn <= 10) {
-                        item.quality += 2;
-                    }
-                    if (item.sellIn == 5) {
-                        item.quality += 3;
-                    }
-                    if (item.sellIn > 10) {
-                        item.quality += 1;
-                    }
-                    if (item.quality > 50) {
-                        item.quality = 50;
-                    }
-                    if (item.sellIn == 0) {
-                        item.quality = 0;
-                    }
+            if (item.isRegular(item.name)){
 
-                    item.sellIn -= 1;
-                }else{
-                    if (item.name.equals("Aged Brie")){
-                        item.sellIn -= 1;
-                        if (item.sellIn < 0){
+                item.sellIn -= 1;
+
+                if (item.quality > 50){
+                    item.quality = 50;
+                }
+                if (item.sellIn < 0){
+                    item.quality -= 1;
+                }
+
+                item.quality -= 1;
+
+                if (item.quality < 0){
+                    item.quality = 0;
+                }
+            }else {
+                if (item.isLegendary(item.name)) {
+
+                }
+                else{
+                    if(item.isPassToConcert(item.name)){
+                        if (item.sellIn > 5 && item.sellIn <= 10) {
                             item.quality += 2;
-                        }else{
+                        }
+                        if (item.sellIn == 5) {
+                            item.quality += 3;
+                        }
+                        if (item.sellIn > 10) {
                             item.quality += 1;
                         }
-                        if (item.quality > 50){
+                        if (item.quality > 50) {
                             item.quality = 50;
                         }
-                    }else {
-                        item.sellIn -= 1;
-
-                        if (item.quality > 50){
-                            item.quality = 50;
-                        }
-                        if (item.sellIn < 0){
-                            item.quality -= 1;
-                        }
-
-                        item.quality -= 1;
-
-                        if (item.quality < 0){
+                        if (item.sellIn == 0) {
                             item.quality = 0;
+                        }
+
+                        item.sellIn -= 1;
+                    }
+                    else{
+                        if (item.isBetterAged(item.name)){
+                            item.sellIn -= 1;
+                            if (item.sellIn < 0){
+                                item.quality += 2;
+                            }else{
+                                item.quality += 1;
+                            }
+                            if (item.quality > 50){
+                                item.quality = 50;
+                            }
                         }
                     }
                 }
