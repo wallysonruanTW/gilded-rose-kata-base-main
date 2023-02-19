@@ -24,29 +24,29 @@ public class Item {
         betterAged.add("Aged Brie");
     }
 
-    public boolean isLegendary(String item){
-        if (legendary.contains(item)){
+    public boolean isLegendary(){
+        if (legendary.contains(this.name)){
             return true;
         }
         return false;
     }
 
-    public boolean isPassToConcert(String item){
-        if (passesToConcert.contains(item)){
+    public boolean isPassToConcert(){
+        if (passesToConcert.contains(this.name)){
             return true;
         }
         return false;
     }
 
-    public boolean isBetterAged(String item){
-        if (betterAged.contains(item)){
+    public boolean isBetterAged(){
+        if (betterAged.contains(this.name)){
             return true;
         }
         return false;
     }
 
-    public boolean isRegular(String item){
-        if (isBetterAged(item) || isLegendary(item) || isPassToConcert(item)){
+    public boolean isRegular(){
+        if (isBetterAged() || isLegendary() || isPassToConcert()){
             return false;
         }
         return true;

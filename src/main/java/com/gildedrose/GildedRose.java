@@ -10,7 +10,7 @@ class GildedRose {
 
     public void updateQuality() {
         for (Item item : items) {
-            if (item.isRegular(item.name)){
+            if (item.isRegular()){
 
                 item.sellIn -= 1;
 
@@ -27,7 +27,7 @@ class GildedRose {
                     item.quality = 0;
                 }
             }
-            if(item.isPassToConcert(item.name)){
+            if(item.isPassToConcert()){
                 if (item.sellIn > 5 && item.sellIn <= 10) {
                     item.quality += 2;
                 }
@@ -46,7 +46,7 @@ class GildedRose {
 
                 item.sellIn -= 1;
             }
-            if (item.isBetterAged(item.name)){
+            if (item.isBetterAged()){
                 item.sellIn -= 1;
                 if (item.sellIn < 0){
                     item.quality += 2;
