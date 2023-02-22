@@ -78,6 +78,53 @@ public class Item {
         return true;
     }
 
+    public void upgradeQuality(){
+        if (isRegular()){
+
+            decreaseSellInBy1();
+
+            if (getSellIn() < 0){
+                decreaseQualityBy(1);
+            }
+
+            decreaseQualityBy(1);
+
+            if (getQuality() < 0){
+                setQuality(0);
+            }
+        }
+        if(isPassToConcert()){
+            if (getSellIn() > 5 && getSellIn() <= 10) {
+                increaseQualityBy(2);
+            }
+            if (getSellIn() == 5) {
+                increaseQualityBy(3);
+            }
+            if (getSellIn() > 10) {
+                increaseQualityBy(1);
+            }
+            if (getSellIn() == 0) {
+                setQuality(0);
+            }
+
+            decreaseSellInBy1();
+        }
+        if (isBetterAged()){
+            decreaseSellInBy1();
+            if (getSellIn() < 0){
+                increaseQualityBy(2);
+            }else{
+                increaseQualityBy(1);
+            }
+        }
+
+        if (! isLegendary()){
+            if (getQuality() > 50){
+                setQuality(50);
+            }
+        }
+    }
+
    @Override
    public String toString() {
         return this.name + ", " + this.sellIn + ", " + this.quality;
