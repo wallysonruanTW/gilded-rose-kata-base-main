@@ -4,27 +4,47 @@ import java.util.ArrayList;
 
 public class Item {
 
-    public String name;
-
-    public int sellIn;
-
-    public int quality;
-
-    private ArrayList<String> legendary = new ArrayList<>();
-    private ArrayList<String> passesToConcert = new ArrayList<>();
-    private ArrayList<String> betterAged = new ArrayList<>();
-
+    private String name;
+    private int sellIn;
+    private int quality;
     public Item(String name, int sellIn, int quality) {
         this.name = name;
         this.sellIn = sellIn;
         this.quality = quality;
+    }
 
-        legendary.add("Sulfuras, Hand of Ragnaros");
-        passesToConcert.add("Backstage passes to a TAFKAL80ETC concert");
-        betterAged.add("Aged Brie");
+    public void setQuality(int quality) {
+        this.quality = quality;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getSellIn() {
+        return sellIn;
+    }
+
+    public int getQuality() {
+        return quality;
+    }
+
+    public void decreaseSellInBy1(){
+        this.sellIn -= 1;
+    }
+
+    public void decreaseQualityBy(int total){
+        this.quality -= total;
+    }
+
+    public void increaseQualityBy(int total){
+        this.quality += total;
     }
 
     public boolean isLegendary(){
+        ArrayList<String> legendary = new ArrayList<>();
+        legendary.add("Sulfuras, Hand of Ragnaros");
+
         if (legendary.contains(this.name)){
             return true;
         }
@@ -32,6 +52,9 @@ public class Item {
     }
 
     public boolean isPassToConcert(){
+        ArrayList<String> passesToConcert = new ArrayList<>();
+        passesToConcert.add("Backstage passes to a TAFKAL80ETC concert");
+
         if (passesToConcert.contains(this.name)){
             return true;
         }
@@ -39,6 +62,9 @@ public class Item {
     }
 
     public boolean isBetterAged(){
+        ArrayList<String> betterAged = new ArrayList<>();
+        betterAged.add("Aged Brie");
+
         if (betterAged.contains(this.name)){
             return true;
         }

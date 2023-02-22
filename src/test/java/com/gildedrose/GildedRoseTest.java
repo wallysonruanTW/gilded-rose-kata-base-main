@@ -15,8 +15,8 @@ public class GildedRoseTest {
 
         app.updateQuality();
 
-        assertEquals(9, items[0].sellIn);
-        assertEquals(19, items[0].quality);
+        assertEquals(9, items[0].getSellIn());
+        assertEquals(19, items[0].getQuality());
     }
 
     @Test
@@ -27,8 +27,8 @@ public class GildedRoseTest {
 
         app.updateQuality();
 
-        assertEquals(-1, items[0].sellIn);
-        assertEquals(18, items[0].quality);
+        assertEquals(-1, items[0].getSellIn());
+        assertEquals(18, items[0].getQuality());
     }
 
     @Test
@@ -39,8 +39,8 @@ public class GildedRoseTest {
 
         app.updateQuality();
 
-        assertEquals(-1, items[0].sellIn);
-        assertEquals(0, items[0].quality);
+        assertEquals(-1, items[0].getSellIn());
+        assertEquals(0, items[0].getQuality());
     }
 
     @Test
@@ -52,8 +52,8 @@ public class GildedRoseTest {
 
         app.updateQuality();
 
-        assertEquals(1, items[0].sellIn);
-        assertEquals(11, items[0].quality);
+        assertEquals(1, items[0].getSellIn());
+        assertEquals(11, items[0].getQuality());
     }
 
     @Test
@@ -65,8 +65,8 @@ public class GildedRoseTest {
 
         app.updateQuality();
 
-        assertEquals(-1, items[0].sellIn);
-        assertEquals(12, items[0].quality);
+        assertEquals(-1, items[0].getSellIn());
+        assertEquals(12, items[0].getQuality());
     }
 
     @Test
@@ -77,8 +77,8 @@ public class GildedRoseTest {
 
         app.updateQuality();
 
-        assertEquals(1, items[0].sellIn);
-        assertEquals(50, items[0].quality);
+        assertEquals(1, items[0].getSellIn());
+        assertEquals(50, items[0].getQuality());
     }
 
     @Test
@@ -89,8 +89,8 @@ public class GildedRoseTest {
 
         app.updateQuality();
 
-        assertEquals(1, items[0].sellIn);
-        assertEquals(50, items[0].quality);
+        assertEquals(1, items[0].getSellIn());
+        assertEquals(50, items[0].getQuality());
     }
 
     @Test
@@ -101,8 +101,8 @@ public class GildedRoseTest {
 
         app.updateQuality();
 
-        assertEquals(1, items[0].sellIn);
-        assertEquals(50, items[0].quality);
+        assertEquals(1, items[0].getSellIn());
+        assertEquals(50, items[0].getQuality());
     }
 
     @Test
@@ -114,8 +114,8 @@ public class GildedRoseTest {
 
         app.updateQuality();
 
-        assertEquals(0, items[0].sellIn);
-        assertEquals(80, items[0].quality);
+        assertEquals(0, items[0].getSellIn());
+        assertEquals(80, items[0].getQuality());
     }
 
     @Test
@@ -126,8 +126,8 @@ public class GildedRoseTest {
 
         app.updateQuality();
 
-        assertEquals(10, items[0].sellIn);
-        assertEquals(21, items[0].quality);
+        assertEquals(10, items[0].getSellIn());
+        assertEquals(21, items[0].getQuality());
     }
 
     @Test
@@ -138,8 +138,8 @@ public class GildedRoseTest {
 
         app.updateQuality();
 
-        assertEquals(9, items[0].sellIn);
-        assertEquals(22, items[0].quality);
+        assertEquals(9, items[0].getSellIn());
+        assertEquals(22, items[0].getQuality());
     }
 
     @Test
@@ -150,8 +150,8 @@ public class GildedRoseTest {
 
         app.updateQuality();
 
-        assertEquals(8, items[0].sellIn);
-        assertEquals(22, items[0].quality);
+        assertEquals(8, items[0].getSellIn());
+        assertEquals(22, items[0].getQuality());
     }
 
     @Test
@@ -162,8 +162,8 @@ public class GildedRoseTest {
 
         app.updateQuality();
 
-        assertEquals(4, items[0].sellIn);
-        assertEquals(23, items[0].quality);
+        assertEquals(4, items[0].getSellIn());
+        assertEquals(23, items[0].getQuality());
     }
 
     @Test
@@ -174,8 +174,8 @@ public class GildedRoseTest {
 
         app.updateQuality();
 
-        assertEquals(-1, items[0].sellIn);
-        assertEquals(0, items[0].quality);
+        assertEquals(-1, items[0].getSellIn());
+        assertEquals(0, items[0].getQuality());
     }
 
     @Disabled
@@ -187,7 +187,7 @@ public class GildedRoseTest {
 
         app.updateQuality();
 
-        assertEquals(2, items[0].sellIn);
-        assertEquals(4, items[0].quality);
+        assertEquals(2, items[0].getSellIn());
+        assertEquals(4, items[0].getQuality());
     }
 }
