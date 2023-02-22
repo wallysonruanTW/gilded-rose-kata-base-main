@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.GildedRoseTest" tests="15" skipped="1" failures="0" errors="0" timestamp="2023-02-22T19:16:15" hostname="MacBook-Pro-de-Wallyson.local" time="0.037">
+<testsuite name="com.gildedrose.GildedRoseTest" tests="15" skipped="1" failures="0" errors="0" timestamp="2023-02-22T19:21:50" hostname="MacBook-Pro-de-Wallyson.local" time="0.053">
   <properties/>
-  <testcase name="qualityOfAnItemShouldNeverBeNegative()" classname="com.gildedrose.GildedRoseTest" time="0.017"/>
-  <testcase name="regularItemShouldDegradeItsQualityTwiceAsFastWhenSellInDateHasPassed()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="backstagePassesShouldIncreaseItsQualityBy2WhenLessThan10daysBeforeSellInDate()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="qualityOfAnItemShouldNeverBeNegative()" classname="com.gildedrose.GildedRoseTest" time="0.026"/>
+  <testcase name="regularItemShouldDegradeItsQualityTwiceAsFastWhenSellInDateHasPassed()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="backstagePassesShouldIncreaseItsQualityBy2WhenLessThan10daysBeforeSellInDate()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="qualityOfAnItemShouldNotBeMoreThan50()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="backstagePassesShouldDropTheirQualityToZeroWhenArrivedSellInDate()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="sulfurasShouldNeverDecreaseItsQuality()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="qualityOfABackstagePassesItemShouldNotBeMoreThan50()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="conjuredItemsShouldIncreaseItsQualityBy2AfterOneDay()" classname="com.gildedrose.GildedRoseTest" time="0.0">
+  <testcase name="sulfurasShouldNeverDecreaseItsQuality()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="qualityOfABackstagePassesItemShouldNotBeMoreThan50()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="conjuredItemsShouldIncreaseItsQualityBy2AfterOneDay()" classname="com.gildedrose.GildedRoseTest" time="0.001">
     <skipped/>
   </testcase>
-  <testcase name="qualityOfAnItemShouldNotIncreaseMoreThan50()" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="qualityOfAnItemShouldNotIncreaseMoreThan50()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="regularItemShouldDegradedItsQualityAfterOneDay()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="agedBrieShouldIncreaseQualityBy2IfItHasExpired()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="agedBrieShouldIncreasItsQualityAfterOneDay()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="backstagePassesShouldIncreasItsQualityBy2When10daysBeforeSellInDate()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="backstagePassesShouldIncreasesItsQualityBy3When5daysBeforeSellInDate()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="backstagePassesShouldIncreasItsQualityBy2When10daysBeforeSellInDate()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="backstagePassesShouldIncreasesItsQualityBy3When5daysBeforeSellInDate()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="backstagePassesShouldIncreasItsQualityBy1WhenMoreThan10daysBeforeSellInDate()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
